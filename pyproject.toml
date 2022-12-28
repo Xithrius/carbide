@@ -1,18 +1,63 @@
 [tool.poetry]
-name = "fastapi-template"
+name = "carbide"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Game file syncing to user-specified locations."
+authors = ["Xithrius <xithrius@fastmail.com>"]
+license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 fastapi = "^0.88.0"
 uvicorn = "^0.20.0"
 prisma = "^0.7.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^6.0.0"
+flake8-annotations = "^2.9.1"
+flake8-bugbear = "^22.12.6"
+flake8-docstrings = "^1.6.0"
+flake8-string-format = "^0.3.0"
+flake8-tidy-imports = "^4.8.0"
+flake8-todo = "^0.7"
+flake8-isort = "^6.0.0"
+pep8-naming = "^0.13.3"
+pre-commit = "^2.21.0"
+taskipy = "^1.10.3"
+pyright = "^1.1.285"
+
+[tool.poetry.group.dev.dependencies]
+black = { version = "^23.1a1", allow-prereleases = true }
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+start = "uvicorn run:app --host 0.0.0.0 --port 8000 --reload"
+lint = "pre-commit run --all-files"
+precommit = "pre-commit install"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+multi_line_output = 6
+order_by_type = false
+case_sensitive = true
+combine_as_imports = true
+line_length = 100
+atomic = true
+
+[tool.pyright]
+include = ["xythrion/**/*.py"]
+exclude = ["**/__pycache__"]
+
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false
+reportMissingTypeArgument = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportUntypedBaseClass = false
+reportUntypedFunctionDecorator = false
+reportUnknownMemberType = false
