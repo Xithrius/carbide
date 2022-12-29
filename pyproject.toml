@@ -61,3 +61,4 @@ reportUnknownVariableType = false
 reportUntypedBaseClass = false
 reportUntypedFunctionDecorator = false
 reportUnknownMemberType = false
+reportGeneralTypeIssues = false
