@@ -352,7 +352,7 @@ python-versions = "*"
 name = "nodeenv"
 version = "1.7.0"
 description = "Node.js virtual environment builder"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*"
 
@@ -407,7 +407,7 @@ virtualenv = ">=20.10.0"
 
 [[package]]
 name = "prisma"
-version = "0.7.1"
+version = "0.8.0"
 description = "Prisma Client Python is an auto-generated and fully type-safe database client"
 category = "main"
 optional = false
@@ -417,15 +417,15 @@ python-versions = ">=3.7.0"
 click = ">=7.1.2"
 httpx = ">=0.19.0"
 jinja2 = ">=2.11.2"
+nodeenv = "*"
 pydantic = ">=1.8.0"
 python-dotenv = ">=0.12.0"
 tomlkit = "*"
 typing-extensions = ">=3.7"
 
 [package.extras]
-all = ["blue (==0.9.1)", "mkdocs (==1.4.2)", "mkdocs-material (==8.5.9)", "nox (==2022.8.7)", "pre-commit (==2.20.0)", "rtoml (==0.9.0)", "twine (==4.0.1)", "typer (==0.7.0)", "wheel (==0.38.4)"]
-dev = ["blue (==0.9.1)", "nox (==2022.8.7)", "pre-commit (==2.20.0)", "rtoml (==0.9.0)", "twine (==4.0.1)", "typer (==0.7.0)", "wheel (==0.38.4)"]
-docs = ["mkdocs (==1.4.2)", "mkdocs-material (==8.5.9)"]
+all = ["nodejs-bin"]
+node = ["nodejs-bin"]
 
 [[package]]
 name = "psutil"
@@ -535,7 +535,7 @@ idna2008 = ["idna"]
 name = "setuptools"
 version = "65.6.3"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -647,7 +647,7 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.11"
-content-hash = "a4c4dd4ce9832e4622cd7dcf7c40f1655a3ee1caf92500b9319a6d0664da89b1"
+content-hash = "9c852b3b7a3835e69eada6953c4f323476a7f6956eeb4760f46f0deb56b4461c"
 
 [metadata.files]
 anyio = [
@@ -834,8 +834,8 @@ pre-commit = [
     {file = "pre_commit-2.21.0.tar.gz", hash = "sha256:31ef31af7e474a8d8995027fefdfcf509b5c913ff31f2015b4ec4beb26a6f658"},
 ]
 prisma = [
-    {file = "prisma-0.7.1-py3-none-any.whl", hash = "sha256:5abc36428e2d8a6f6f0bc448417fe3b8eff58fe0c4dd328e211719bb8e89079b"},
-    {file = "prisma-0.7.1.tar.gz", hash = "sha256:67b0d05c7531ed93e00004bbe505ee8ac0bedfa93420330c1de4ea96fe0491b5"},
+    {file = "prisma-0.8.0-py3-none-any.whl", hash = "sha256:4498fe48e89fcbe3debddda164f6fcdcbace91eb0cdd65282a157bbe339d7289"},
+    {file = "prisma-0.8.0.tar.gz", hash = "sha256:c631b2c288be9a756305770eebb7d5f309697a8b2f3454d397d56450687cbf8b"},
 ]
 psutil = [
     {file = "psutil-5.9.4-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:c1ca331af862803a42677c120aff8a814a804e09832f166f226bfd22b56feee8"},
