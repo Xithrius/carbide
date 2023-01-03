@@ -50,7 +50,7 @@ line_length = 100
 atomic = true
 
 [tool.pyright]
-include = ["xythrion/**/*.py"]
+include = ["app/**/*.py"]
 exclude = ["**/__pycache__"]
 
 typeCheckingMode = "strict"
