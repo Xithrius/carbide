@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = "^0.88.0"
+fastapi = "^0.89.0"
 uvicorn = "^0.20.0"
 prisma = "^0.7.1"
 
