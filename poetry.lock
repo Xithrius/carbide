@@ -485,7 +485,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "pyright"
-version = "1.1.285"
+version = "1.1.287"
 description = "Command line wrapper for pyright"
 category = "dev"
 optional = false
@@ -647,7 +647,7 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.11"
-content-hash = "a4c4dd4ce9832e4622cd7dcf7c40f1655a3ee1caf92500b9319a6d0664da89b1"
+content-hash = "ff2cf31dfe4be121297b20918d65c43eedda39d26289574802c1449f988d5911"
 
 [metadata.files]
 anyio = [
@@ -904,8 +904,8 @@ pyflakes = [
     {file = "pyflakes-3.0.1.tar.gz", hash = "sha256:ec8b276a6b60bd80defed25add7e439881c19e64850afd9b346283d4165fd0fd"},
 ]
 pyright = [
-    {file = "pyright-1.1.285-py3-none-any.whl", hash = "sha256:8a6b60b3ff0d000c549621c367cdf0013abdaf24d09e6f0b4b95031b357cc4b1"},
-    {file = "pyright-1.1.285.tar.gz", hash = "sha256:ecd28e8556352e2c7eb5f412c6841ec768d25e8a6136326d4a6a67d94370eba1"},
+    {file = "pyright-1.1.287-py3-none-any.whl", hash = "sha256:0c760edbd40eb4f763027f742de2cb29c1d8320880e5f6ad85fc89db43fe6871"},
+    {file = "pyright-1.1.287.tar.gz", hash = "sha256:806a4af328dc1f2b6688147528c71393f0cf241eb1214d6e9a7fb1ef5caa2327"},
 ]
 python-dotenv = [
     {file = "python-dotenv-0.21.0.tar.gz", hash = "sha256:b77d08274639e3d34145dfa6c7008e66df0f04b7be7a75fd0d5292c191d79045"},
